@@ -11,7 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>.center-text{text-align: center;}</style>
+		<style>
+			/* Center text */
+			.center-text{text-align: center;}
+			/* Remove the white cross overlay from tiles */
+			.tiles article:before,
+			.tiles article:after {
+			  display: none !important;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -125,3 +133,4 @@
 
 	</body>
 </html>
+
