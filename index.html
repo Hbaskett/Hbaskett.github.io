@@ -15,9 +15,11 @@
 			/* Center text */
 			.center-text{text-align: center;}
 			/* Remove the white cross overlay from tiles */
-			.tiles article:before,
-			.tiles article:after {
-			  display: none !important;
+			.tiles article > .image::before,
+			.tiles article > .image::after {
+				content: none !important;
+			    display: none !important;
+			    background: none !important;
 			}
 		</style>
 	</head>
@@ -133,4 +135,5 @@
 
 	</body>
 </html>
+
 
