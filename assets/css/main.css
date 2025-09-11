@@ -2584,6 +2584,7 @@ input, select, textarea {
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
+			height: 250px;
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2602,6 +2603,8 @@ input, select, textarea {
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 
 				.tiles article > .image:before {
@@ -3329,3 +3332,4 @@ input, select, textarea {
 			}
 
 		}
+
