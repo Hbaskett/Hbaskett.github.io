@@ -11,6 +11,67 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+
+            /* Paste all the CSS formatting here */
+
+            .publication-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                grid-auto-rows: 1fr;
+                gap: 35px;
+                align-items: stretch;
+            }
+
+            .publication {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-width: 0;
+                box-sizing: border-box;
+                padding: 20px;
+                border: 1px solid #dddddd;
+                border-radius: 5px;
+            }
+
+            .publication h3 {
+                text-align: center;
+                font-weight: bold;
+                min-height: 3.5em;
+                margin-bottom: 15px;
+            }
+
+            .publication h3 a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .publication h3 a:hover {
+                text-decoration: underline;
+            }
+
+            .publication img {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: contain;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .publication p {
+                flex-grow: 1;
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 736px) {
+                .publication-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+        </style>
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -33,62 +94,105 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="research.html">Research</a></li>
+							<li><a href="research.html">Publications</a></li>
 							<li><a href="cv.html">CV</a></li>
 							<li><a href="#footer">Contact Information</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Research</h1>
-
-							<p>Below is a brief description of some of the projects I have been involved in.</p>
-
-							<!--In reverse chronological order-->
-							
-							<!--Mukherjee et al. 2025-->
-							
-							<!--Christie et al. 2023-->
-							<h3>Dissipation Mechanisms in a GCM</h3>
-							<h5>Project lead: Duncan Christie</h5>
-							<p>
-								<span class="image left">
-								    <img src="images/Christie et al. 2024.png" alt="" />
-								</span>
-								In <a class="underline" href="https://academic.oup.com/mnras/article/532/3/3001/7689768" target="_blank">Christie et al. 2024</a> 
-								we investigated the effects of dissipation parameterisations, in the Met Office Unified Model (UM), on the circulation structure of 
-								hot Jupiter exoplanets. We found that unnecessary dissipation could lead to the formation of an equatorial jet flowing opposite to 
-								the planet's direction of rotation. Additionally, for processes dictated by vertical mixing, changes to the dissipation mechanisms 
-								result in variations in the vertical velocity, even in cases where the temperature structure is insensitive to dissipation. 
-							
-								For me, the effects of dissipation on the vertical wind velocities are a particularly important result. As disequilibrium chemistry 
-								is partly driven by vertical mixing, it is worth remembering the secondary effects of stability parameterisations when interpreting 
-								model results and contextualising observations.
-							</p>
-
-							<!--Zamyatina et al. 2023-->
-							<h3>Disequilibrium Chemistry and Metallicity</h3>
-							<h5>Project lead: Maria Zamyatina</h5>
-							<p>
-								<span class="image left">
-								    <img src="images/Zamyatina et al. 2024.png" alt="" />
-								</span>
-								In <a class="underline" href="https://academic.oup.com/mnras/article/529/2/1776/7615449" target="_blank">Zamyatina et al. 2024</a> 
-								we used the Met Office Unified Model (UM) to investigate the sensitivity of the boundary between equilibrium and disequilibrium
-								chemical processes, known as the quench point, to changes in atmospheric metallicity. We found that the change in atmospheric 
-								temperature associated with increasing metallicity could shift the quench point into pressure regions affected by the superrotating 
-								jet. Leading to equatorial depletion of key chemical species such as methane which could be observable with missions such as 
-								the James Webb Space Telescope.
-
-								The potential to constrain which chemical processes are ongoing in exoplanet atmospheres observationally is extremely exciting. Hot 
-								Jupiters which do not have dayside and nightside terminator cloud coverage are a window to understanding which specific chemical species 
-								and reaction pathways are important in the wider population of hot Jupiter atmospheres.
-							</p>
-							
-						</div>
-					</div>
+				<div id="main">
+				    <div class="inner">
+				
+				        <h1>Publications</h1>
+				
+				        <div class="publication-grid">
+				
+				            <div class="publication">
+				
+				                <h3>
+				                    <a href="https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/stag2060/9004094" target="_blank">
+				                        <b>Zamyatina et al. 2026:</b> CH<sub>4</sub> chemical pathways in Hot Jupiter atmospheres.
+				                    </a>
+				                </h3>
+				
+				                <img src="images/Zamyatina et al. 2026.png" alt="">
+				
+				                <p>
+				                    Analysis of CH<sub>4</sub>-CO interconversion pathways using graph theory, post-processed onto 
+									the output of Hot Jupiter general circulation models. In 3D, chemical quenching should be reframed 
+									as the transfer of control of the distribution of chemical species from thermochemistry to transport.
+									In chemical disequilibrium the distribution of CH<sub>4 depends on (1) the CH<sub>4 abundance at the 
+									quench level, (2) where the flow trasnports CH<sub>4 and (3) whether local thermochemistry can remove
+									that CH<sub>4.
+				                </p>
+				
+				            </div>
+				
+				            <div class="publication">
+				
+				                <h3>
+				                    <a href="https://www.science.org/doi/epdf/10.1126/science.adx5903" target="_blank">
+				                        <b>Mukherjee et al. 2026:</b> Limb Asymmetry observed in the atmosphere of WASP-94Ab.
+				                    </a>
+				                </h3>
+				
+				                <img src="images/Mukherjee et al. 2026.png" alt="">
+				
+				                <p>
+				                    Atmospheric characterisation of WASP-94Ab using JWST's NIRSpec instrument, revealing a 
+									morning limb covered in enstatite clouds and an evening limb with H<sub>2</sub>O absorption
+									features. Explaining this observation from first principles requires a 3D model with coupled 
+									radiative transfer, fluid dynamics, gas-phase and aerosol-phase chemistry. Building such a 
+									model represents one of the the largest computational challenges in exoplanet science.
+				                </p>
+				
+				            </div>
+				
+				            <div class="publication">
+				
+				                <h3>
+				                    <a href="https://academic.oup.com/mnras/article/532/3/3001/7689768"
+				                       target="_blank">
+				                       <b>Christie et al. 2024:</b> Dissipation Mechanisms in a 3D general circulation 
+										model applied to Hot Jupiters.
+				                    </a>
+				                </h3>
+				
+				                <img src="images/Christie et al. 2024.png" alt="">
+				
+								<p>
+									Atmospheric dynamics is sensative to the choice of dissipation and filtering
+									required to maintian numerical stability within a GCM. Therefore observations are needed 
+									to constrain the magnitude of physical and numerical dissipation in Hot Jupiter atmospheres
+									and inform modelling choices.
+				                </p>
+				
+				            </div>
+				
+				            <div class="publication">
+				
+				                <h3>
+				                    <a href="https://academic.oup.com/mnras/article/529/2/1776/7615449"
+				                       target="_blank">
+				                        <b>Zamyatina et al. 2024:</b> Disequilibrium Chemistry and Metallicity in Hot Jupiter atmospheres.
+				                    </a>
+				                </h3>
+				
+				                <img src="images/Zamyatina et al. 2024.png" alt="">
+				
+				                <p>
+				                    Chemical quenching affects the spatial distribution of all chemical species, with CH<sub>4</sub>
+									zonally quenched and therefore particularly affected. Temperature changes, induced by increased 
+									atmospheric metallicity, push the quench level to lower pressures into the region dominated by 
+									the equatorial jet, causing equatorial depletion of species undergoing zonal quenching.
+				                </p>
+				
+				            </div>
+				
+				        </div>
+				    </div>
+				</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -97,7 +201,7 @@
 								<h2>Contact Information</h2>
 									<p><b>Email:</b> hb595[at]exeter.ac.uk</p>
 									<p><b>Address:</b> 
-										Physics Building, Streatham Campus,University of Exeter, Stocker Road, Exeter, EX4 4QL, UK</p>
+										Physics Building, Streatham Campus, University of Exeter, Stocker Road, Exeter, EX4 4QL, UK</p>
 
 								<!-- Link to my ORCID ID -->
 									<p><b>ORCID ID:</b> 
